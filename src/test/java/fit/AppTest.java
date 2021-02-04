@@ -3,12 +3,8 @@ package fit;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 import org.junit.Test;
 
@@ -70,7 +66,7 @@ public class AppTest {
         //assert
 
         //same size (due to parameters sent to random method)
-        assertEquals(attendanceListResult.size(), attendanceListResult.size());
+        assertEquals(attendanceListResult.size(), attendanceListExpected.size());
 
         //same percentile of 'true' values due to parameters sent to random method
         assertEquals(
